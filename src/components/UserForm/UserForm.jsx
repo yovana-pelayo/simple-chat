@@ -25,7 +25,7 @@ export default function UserForm({ className = '', label, onSubmit }) {
       setFormError('');
       if (!email || password.length < 8)
         throw new Error(
-          'An email and password (with 8+ characters) are required.'
+          'An email and password (with 8+ characters) are required!'
         );
       setLoading(true);
       await onSubmit(email, password);
